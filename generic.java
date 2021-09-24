@@ -6,10 +6,10 @@ public class generic<E extends Comparable<E>> {
     public generic (E[] element){
         this.element=element;
 }
- public static  <E extends Comparable<E>> E compare(E[] elements) {
+ public static  <E extends Comparable<E>> E compare(E[] data) {
 
-       E max = elements[0];
-     for (E element : elements) {
+       E max = data[0];
+     for (E element : data) {
          if ( element.compareTo(max)>0) {
             max=element;
          }
