@@ -6,7 +6,7 @@ public class generic<E extends Comparable<E>> {
     public generic (E[] element){
         this.element=element;
 }
- public static  <E extends Comparable<E>> E compare(E[] data) {
+ public static  <E extends Comparable<E>> E intCompare(E[] data) {
 
        E max = data[0];
      for (E element : data) {
@@ -21,6 +21,6 @@ public class generic<E extends Comparable<E>> {
     public static void main(String args[]){
      System.out.println("generic class:");
         Integer[] arr = {3, 4, 5};
-     compare(arr);
+     intCompare(arr);
     }
 }
