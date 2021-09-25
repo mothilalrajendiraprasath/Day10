@@ -3,7 +3,10 @@ import java.util.Arrays;
 public class generic3<E extends Comparable<E>> {
     E[] element;
 
-
+    /*
+    *generic method to compare any type of data
+    * compareTo method to find the maximum value 
+    */
     public static  <E extends Comparable<E>> E intCompare(E[] elements) {
 
         E max = elements[0];
