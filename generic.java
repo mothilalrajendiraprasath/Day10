@@ -2,10 +2,15 @@ import java.util.Arrays;
 
 public class generic<E extends Comparable<E>> {
     E[] element;
-
+ 
+    /* constructor will take any type of data as parameter */
     public generic (E[] element){
         this.element=element;
 }
+    /*
+    *generic method to compare any type of data
+    * conpareTo method to find the maximum value 
+    */
  public static  <E extends Comparable<E>> E intCompare(E[] data) {
 
        E max = data[0];
